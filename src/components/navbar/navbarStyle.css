@@ -1,0 +1,26 @@
+.contentNavbar{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.navOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 45px;
+    margin-right: 100px;
+}
+
+span{
+    cursor: pointer;
+}
