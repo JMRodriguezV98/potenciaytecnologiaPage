@@ -1,5 +1,5 @@
 .bg-page{
-    background-image: url('../../assets/img/city.png');
+    background-image: url('../assets/img/city.png');
     width: 100vw;
     height: 100vh;
     position: absolute;

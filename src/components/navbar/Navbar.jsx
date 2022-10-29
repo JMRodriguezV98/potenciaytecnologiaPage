@@ -1,17 +1,24 @@
 import React from 'react'
+import { Link }  from 'react-router-dom'
 import './navbarStyle.css'
 import logo from '../../assets/img/logo.png'
 
-const Navbar = () => {
+function Navbar() {
   return (
     <>
       <nav className='contentNavbar'>
-        <img className='logo' src={logo} alt='Logo Potencia y tecnologia'/>
+        <Link to={'/'}>
+            <img className='logo' src={logo} alt='Logo Potencia y tecnologia'/>
+        </Link>
         <div className='navOptions'>
-          <span>Nosotros</span>
-          <span>Productos</span>
+            <Link className='linkStyle' to="nosotros">Nosotros</Link>
+            <Link className='linkStyle' to="productos">Productos</Link>
+            <Link className='linkStyle' to="catalogo">Catalogos</Link>
+            <Link className='linkStyle' to="contacto">Contacto</Link>
+          {/* <span>Nosotros</span> */}
+          {/* <span>Productos</span>
           <span>Catalogos</span>
-          <span>Contacto</span>
+          <span>Contacto</span> */}
           <span>
             <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.41627 0H0V2.17488H3.41627V0Z" fill="white"/>
@@ -28,4 +35,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

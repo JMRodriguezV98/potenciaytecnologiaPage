@@ -1,7 +1,7 @@
 import React from 'react'
 import './socialButtonStyle.css'
 
-const SocialButtons = ( props ) => {
+function SocialButtons( props ) {
   return (
     <>
         <div className='contentSocialMedia' >
@@ -11,4 +11,4 @@ const SocialButtons = ( props ) => {
   )
 }
 
-export default SocialButtons
+export default SocialButtons;

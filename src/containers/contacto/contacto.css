@@ -1,0 +1,125 @@
+.bg-contentContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1B1B;
+    width: 100vw;
+    height: 100vh;
+}
+
+#form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    margin-right: 50px;
+    width: 40%;
+    height: 80%;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-title{
+    color: white;
+}
+
+.content-inputs{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    height: 140px;
+    width: 280px;
+}
+
+input{
+    background: none;
+    padding-left: 8px;
+    height: 23px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    border-style: none none solid solid;
+    outline: none;
+}
+
+textarea{
+    padding-left: 12px;
+    padding-top: 5px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    resize: none;
+    box-shadow: rgba(46, 46, 46, 0.25) 0px 30px 60px -12px inset, rgb(20, 20, 20) 0px 18px 36px -18px inset;
+}
+
+.send-button{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    background-color: #072061;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 36px;
+}
+
+#info-content{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 40%;
+    height: 80%;
+}
+
+.info-contentText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-info-central{
+    width: 100%;
+    height: 70px;
+}
+
+.info-contact{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.data-contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+}
+
+.iconos-contacto{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.info-info{
+    margin-left: 20px;
+}
