@@ -15,10 +15,6 @@ function Navbar() {
             <Link className='linkStyle' to="productos">Productos</Link>
             <Link className='linkStyle' to="catalogo">Catalogos</Link>
             <Link className='linkStyle' to="contacto">Contacto</Link>
-          {/* <span>Nosotros</span> */}
-          {/* <span>Productos</span>
-          <span>Catalogos</span>
-          <span>Contacto</span> */}
           <span>
             <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.41627 0H0V2.17488H3.41627V0Z" fill="white"/>
