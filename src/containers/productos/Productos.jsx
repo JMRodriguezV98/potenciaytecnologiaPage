@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductosComponent from '../../components/productos/ProductosComponent'
 import SocialButtons from '../../components/socialButtons/SocialButtons'
+import ParticulasBackground from '../../components/particulas/ParticulasBackground'
 import './styleProductos.css'
 import facebook from '../../assets/img/facebook.png'
 import instagram from '../../assets/img/instagram.png'
@@ -19,19 +20,19 @@ function Productos() {
     <>
       <div className='bg-content-products'>
         <div className='filtro'></div>
+        <ParticulasBackground />
         <h2 id='title'>Productos</h2>
         <div id='cards-products-container'>
-          <ProductosComponent id='automatizacion' image={ automatizacion } />
-          <ProductosComponent id='instrumentacion' image={ instrumentacion } />
-          <ProductosComponent id='conductores' image={ conductores } />
-          <ProductosComponent id='tuberia' image={ tuberia } />
-          <ProductosComponent id='maniobra' image={ maniobra } />
-          <ProductosComponent id='herramientas' image={ herramientas } />
-          <ProductosComponent id='cajas' image={ cajas } />
-          <ProductosComponent id='iluminacion' image={ iluminacion } />
-          <ProductosComponent id='motores' image={ motores } />
+          <ProductosComponent id={ 'automatizacionId' } image={ automatizacion } name={ 'Automatización' } />
+          <ProductosComponent id={ 'instrumentacionId' } image={ instrumentacion } name={ 'Instrumentacion' } />
+          <ProductosComponent id={ 'conductoresId' } image={ conductores } name={ 'Conductores electricos' } />
+          <ProductosComponent id={ 'tuberiaId' } image={ tuberia } name={ 'Tuberia y canalización' } />
+          <ProductosComponent id={ 'maniobraId' } image={ maniobra } name={ 'Maniobra y control' } />
+          <ProductosComponent id={ 'herramientasId' } image={ herramientas } name={ 'Herramientas' } />
+          <ProductosComponent id={ 'cajasId' } image={ cajas } name={ 'Cajas y tableros' } />
+          <ProductosComponent id={ 'iluminacionId' } image={ iluminacion } name={ 'Iluminación' } />
+          <ProductosComponent id={ 'motoresId' } image={ motores } name={ 'Motores' } />
         </div>
-        {/* <ProductosComponent /> */}
         <div className='containerSocial'>
           <a target={'_blank'} rel={'noopener noreferrer'} href="https://www.facebook.com/PotenciayTecnologia/">
             <SocialButtons imagen={ facebook } />

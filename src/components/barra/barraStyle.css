@@ -1,0 +1,10 @@
+#barra{
+    position: absolute;
+    right: 20px;
+    width: 4px;
+    height: 400px;
+    top: 90px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}   

@@ -2,6 +2,10 @@ body{
     background-color: #1E1E1E;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .bg-content-products{
     display: flex;
     background-image: url('../../assets/img/siemens-transportadora.png');
