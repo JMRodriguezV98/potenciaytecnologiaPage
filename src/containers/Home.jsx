@@ -3,7 +3,6 @@ import SocialButtons from '../components/socialButtons/SocialButtons'
 import './homeStyle.css'
 import facebook from '../assets/img/facebook.png'
 import instagram from '../assets/img/instagram.png'
-import Barra from '../components/barra/Barra'
 
 function Home() {
   return (
@@ -24,7 +23,6 @@ function Home() {
           </a>
         </div>
       </div>
-      <Barra />
     </>
   )
 }

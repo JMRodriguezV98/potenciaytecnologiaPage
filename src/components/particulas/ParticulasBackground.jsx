@@ -28,7 +28,7 @@ const ParticulasBackground = ( props ) => {
             },
             modes: {
               push: {
-                quantity: 6, // number of particles to add on click
+                quantity: 10, // number of particles to add on click
               },
               repulse: {
                 distance: 50, // distance of the particles from the cursor

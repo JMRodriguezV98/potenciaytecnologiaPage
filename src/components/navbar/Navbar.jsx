@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <nav className='contentNavbar'>
-        <Link to={'/'}>
+        <Link to={'/'} >
             <img className='logo' src={logo} alt='Logo Potencia y tecnologia'/>
         </Link>
         <div className='navOptions'>
