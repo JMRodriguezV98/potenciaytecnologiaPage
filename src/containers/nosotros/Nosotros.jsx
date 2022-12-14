@@ -10,9 +10,9 @@ import './nosotros.css'
 
 function Nosotros() {
 
-  const handleMouseOver = ( {target} ) => {
-    const mision = document.getElementById('misionField');
-    const vision = document.getElementById('visionField');
+  const handleMouseOver = ( { target } ) => {
+    const mision = document.getElementById( 'misionField' );
+    const vision = document.getElementById( 'visionField' );
     if( target.id == 'mision' ){
       mision.classList.add( 'visible' );
     }
@@ -22,9 +22,9 @@ function Nosotros() {
     }
   }
 
-  const handleMouseLeave = ( {target} ) => {
-    const mision = document.getElementById('misionField');
-    const vision = document.getElementById('visionField');
+  const handleMouseLeave = ( { target } ) => {
+    const mision = document.getElementById( 'misionField' );
+    const vision = document.getElementById( 'visionField' );
     if( target.id == 'mision' ){
       mision.classList.remove( 'visible' );
     }

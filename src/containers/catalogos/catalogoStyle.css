@@ -7,3 +7,15 @@
     height: 100vh;
     background-color: #1C1B1B;
 }
+
+#container-circle{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    height: 436px;
+    width: 436px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background: linear-gradient(257.21deg, #000069 6.79%, rgba(0, 0, 105, 0) 92.49%);
+}

@@ -6,6 +6,10 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+.containerSocial{
+    position: fixed;
+}
+
 .bg-content-products{
     display: flex;
     background-image: url('../../assets/img/siemens-transportadora.png');
