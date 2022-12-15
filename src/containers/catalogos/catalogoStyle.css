@@ -1,7 +1,7 @@
 .bg-content-catalogo{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 150px;
     width: 100vw;
     height: 100vh;
@@ -10,12 +10,30 @@
 
 #container-circle{
     display: flex;
-    background-color: red;
     justify-content: center;
     align-items: center;
     height: 436px;
     width: 436px;
-    margin-left: 20px;
     border-radius: 50%;
     background: linear-gradient(257.21deg, #000069 6.79%, rgba(0, 0, 105, 0) 92.49%);
+}
+
+#panel-catalogos{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 20px;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    margin-right: 200px;
+    color: white;
+}
+
+#arrowUp{
+    cursor: pointer;
+}
+
+#arrowDown{
+    cursor: pointer;
 }
