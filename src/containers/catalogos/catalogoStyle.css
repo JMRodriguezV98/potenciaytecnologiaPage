@@ -30,6 +30,14 @@
     color: white;
 }
 
+#principalCatalogos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: hidden;
+    height: 350px;
+}
+
 #arrowUp{
     cursor: pointer;
 }

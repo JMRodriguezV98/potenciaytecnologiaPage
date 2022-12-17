@@ -1,5 +1,6 @@
 import React from 'react'
 import SocialButtons from '../../components/socialButtons/SocialButtons'
+import CatalogosI from '../../components/catalogo/CatalogosI'
 import facebook from '../../assets/img/facebook.png'
 import instagram from '../../assets/img/instagram.png'
 import imagenCatalogo from '../../assets/img/catalogoImg.png'
@@ -9,8 +10,11 @@ import './catalogoStyle.css'
 
 function Catalogos() {
 
-  const handleClick = ( { target } ) => {
-    console.log( target )
+  const handleClick = () => {
+    const contenedor = document.getElementById('principalCatalogos');
+    const hijos = contenedor.children;
+    console.log( contenedor );
+    console.log( hijos );
   }
 
   return (
@@ -21,13 +25,18 @@ function Catalogos() {
         </div>
         <div id='panel-catalogos'>
           <div>
-            <img id='arrowUp' src={ arrow } alt="imagen de arrow up" />
+            <img onClick={ handleClick } id='arrowUp' src={ arrow } alt="imagen de arrow up" />
           </div>
-          <h3 onClick={ handleClick } >CATÁLOGO SIEMENS</h3>
-          <h3 onClick={ handleClick } >CATÁLOGO ROKER</h3>
-          <h3 onClick={ handleClick } >CATÁLOGO NEXANS</h3>
-          <h3 onClick={ handleClick } >CATÁLOGO SYLVANIA LED</h3>
-          <h3 onClick={ handleClick } >CATÁLOGO SCHMERSAL</h3>
+          <div id='principalCatalogos'>
+            <CatalogosI name='CATÁLOGO SIEMENS' />
+            <CatalogosI name='CATÁLOGO ROKER' />
+            <CatalogosI name='CATÁLOGO NEXANS' />
+            <CatalogosI name='CATÁLOGO SYLVANIA LED' />
+            <CatalogosI name='CATÁLOGO SCHMERSAL' />
+            <CatalogosI name='CATÁLOGO SCHMERSAL' />
+            <CatalogosI name='CATÁLOGO SCHMERSAL' />
+            <CatalogosI name='CATÁLOGO SCHMERSAL' />
+          </div>
           <div>
             <img id='arrowDown' src={ arrowDown } alt="imagen de arrow down" />
           </div>
