@@ -31,11 +31,13 @@
 }
 
 #principalCatalogos{
+    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: hidden;
     height: 350px;
+    width: 500px;
 }
 
 #arrowUp{

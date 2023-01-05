@@ -19,8 +19,10 @@ function Contacto() {
               <input type="email" placeholder='Correo'/>
               <input type="number" placeholder='Telefono'/>
             </div>
-            <textarea name="" id="" cols="35" rows="10" maxLength={250} placeholder='Mensaje'></textarea>
-            <button className='send-button'>ENVIAR</button>
+            <div id='content-area-submit'>
+              <textarea name="" id="" cols="35" rows="10" maxLength={250} placeholder='Mensaje'></textarea>
+              <button className='send-button'>ENVIAR</button>
+            </div>
           </form>
         </div>
         <div id='info-content'>
@@ -28,7 +30,7 @@ function Contacto() {
             <h2>DATOS DE CONTACTO</h2>
             <div className='content-info-central'>
               <div className='info-contact'>
-                <img className='iconos-contacto' src={pnhone} alt="icono telefono" />
+                <img className='iconos-contacto' src={ pnhone } alt="icono telefono" />
                 <div className='data-contact'>
                   <h3>Telefono:</h3>
                   <p className='info-info'>PBX: (602) - 884 - 1108</p>
@@ -37,7 +39,7 @@ function Contacto() {
             </div>
             <div className='content-info-central'>
               <div className='info-contact'>
-                <img className='iconos-contacto' src={mensaje} alt="icono telefono" />
+                <img className='iconos-contacto' src={ mensaje } alt="icono telefono" />
                 <div className='data-contact'>
                   <h3>Correo:</h3>
                   <p className='info-info'>ventas@potenciaytecnologia.com</p>
@@ -52,6 +54,15 @@ function Contacto() {
                   <p className='info-info'>Oficinas: Calle 18 # 5 - 70, Cali - Colombia</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div id='content-mapa'>
+            <div className="mapouter">
+              <div className="gmap_canvas">
+                <iframe className="gmap_iframe" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://maps.google.com/maps?width=500&amp;height=200&amp;hl=en&amp;q=potencia y tecnologia&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+                <a href="https://piratebay-proxys.com/">Piratebay</a>
+              </div>1
             </div>
           </div>
         </div>

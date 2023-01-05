@@ -10,11 +10,8 @@ import './catalogoStyle.css'
 
 function Catalogos() {
 
-  const handleClick = () => {
-    const contenedor = document.getElementById('principalCatalogos');
-    const hijos = contenedor.children;
-    console.log( contenedor );
-    console.log( hijos );
+  const handleClick = ( { target } ) => {
+    console.log( target );
   }
 
   return (
@@ -27,15 +24,14 @@ function Catalogos() {
           <div>
             <img onClick={ handleClick } id='arrowUp' src={ arrow } alt="imagen de arrow up" />
           </div>
-          <div id='principalCatalogos'>
-            <CatalogosI name='CATÁLOGO SIEMENS' />
-            <CatalogosI name='CATÁLOGO ROKER' />
-            <CatalogosI name='CATÁLOGO NEXANS' />
-            <CatalogosI name='CATÁLOGO SYLVANIA LED' />
-            <CatalogosI name='CATÁLOGO SCHMERSAL' />
-            <CatalogosI name='CATÁLOGO SCHMERSAL' />
-            <CatalogosI name='CATÁLOGO SCHMERSAL' />
-            <CatalogosI name='CATÁLOGO SCHMERSAL' />
+          <div id='principalCatalogos' onClick={ handleClick } >
+            <CatalogosI catalog='siemens' name='CATÁLOGO SIEMENS' />
+            <CatalogosI catalog='roker' name='CATÁLOGO ROKER' />
+            <CatalogosI catalog='nexans' name='CATÁLOGO NEXANS' />
+            <CatalogosI catalog='sylvania' name='CATÁLOGO SYLVANIA LED' />
+            <CatalogosI catalog='nylofix' name='CATÁLOGO NYLOFIX' />
+            <CatalogosI catalog='multivia' name='CATÁLOGO MULTIVIA' />
+            <CatalogosI catalog='industrial' name='CATÁLOGO INDUSTRIAL' />
           </div>
           <div>
             <img id='arrowDown' src={ arrowDown } alt="imagen de arrow down" />
